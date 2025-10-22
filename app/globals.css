@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0b1220;
+  --color-text: #e5e7eb;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  color: var(--color-text);
+  background: linear-gradient(180deg, var(--color-bg) 0%, #0f172a 100%);
+}
+
+@keyframes duckFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+.duck-float {
+  animation: duckFloat 3s ease-in-out infinite;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold tracking-tight mb-8;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg shadow-black/20;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-3 font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary text-secondary hover:bg-yellow-400;
+}
+
+.btn-accent {
+  @apply bg-accent text-white hover:bg-sky-400;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #FACC15, #0EA5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
