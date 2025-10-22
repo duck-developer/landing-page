@@ -1,5 +1,5 @@
 export const siteConfig = {
-  brandName: "Duck Developers",
+  brandName: "Duck Developer",
   mascot: "Duckling",
   domain: "duckdevelopers.my.id",
   tagline: "Quietly crafting smart software.",
@@ -10,7 +10,7 @@ export const siteConfig = {
     "Your backend shouldn’t sink.",
   ],
   heroCopy:
-    "Duck Developers is a small AI & backend studio helping startups build reliable, scalable systems — fast and clean.",
+    "Duck Developer is a small AI & backend studio helping startups build reliable, scalable systems — fast and clean.",
   services: [
     "AI integration",
     "Backend systems",
@@ -18,11 +18,11 @@ export const siteConfig = {
     "API development",
   ],
   contact: {
-    email: "hello@duckdevelopers.my.id",
+    email: "duckdeveloper@outlook.com",
     whatsappNumber: "+6281234567890", // change to your WA number with country code
   },
   links: {
-    github: "https://github.com/duckdevelopers",
+    github: "https://github.com/duck-developer",
     whatsapp: "https://wa.me/6281234567890", // derived from whatsappNumber (update both if you change)
     calendar: "https://cal.com/your-handle", // optional scheduling link
   },
@@ -39,13 +39,13 @@ export const siteConfig = {
       title: "AI Chat Backend",
       type: "Backend · AI",
       description: "Production-ready chat backend with vector search and analytics.",
-      href: "https://github.com/duckdevelopers/ai-chat-backend",
+      href: "https://github.com/duckdeveloper/ai-chat-backend",
     },
     {
       title: "Serverless ETL",
       type: "Cloud · Data",
       description: "Serverless data pipeline on AWS with ingestion and transformations.",
-      href: "https://github.com/duckdevelopers/serverless-etl",
+      href: "https://github.com/duckdeveloper/serverless-etl",
     },
   ],
 } as const;

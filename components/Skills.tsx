@@ -14,7 +14,7 @@ export default function Skills() {
         <h2 className="section-title">Skills & Tech Stack</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {skills.map((s) => (
-            <div key={s.label} className="card p-5 flex items-center gap-4">
+            <div key={s.label} className="card p-5 flex items-center gap-4 text-base-color">
               <div className="text-2xl">{s.icon}</div>
               <div className="font-medium">{s.label}</div>
             </div>

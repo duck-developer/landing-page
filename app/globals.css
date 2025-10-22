@@ -3,8 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #0b1220;
+  /* Light theme defaults */
+  --color-bg-top: #f8fafc; /* slate-50 */
+  --color-bg-bottom: #e2e8f0; /* slate-200 */
+  --color-text: #0f172a; /* slate-900 */
+  --color-text-muted: #475569; /* slate-600 */
+  --color-text-subtle: #64748b; /* slate-500 */
+  --color-surface: #ffffff;
+  --color-surface-2: #f8fafc; /* subtle surface */
+  --color-surface-veil: rgba(255, 255, 255, 0.4);
+  --color-border: rgba(0, 0, 0, 0.10);
+}
+.dark {
+  --color-bg-top: #0b1220;
+  --color-bg-bottom: #0f172a;
   --color-text: #e5e7eb;
+  --color-text-muted: #cbd5e1; /* slate-300 */
+  --color-text-subtle: #94a3b8; /* slate-400 */
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-2: rgba(255, 255, 255, 0.04);
+  --color-surface-veil: rgba(2, 6, 23, 0.40); /* slate-950 @ 40% */
+  --color-border: rgba(255, 255, 255, 0.10);
 }
 
 html, body, #__next {
@@ -13,8 +32,17 @@ html, body, #__next {
 
 body {
   color: var(--color-text);
-  background: linear-gradient(180deg, var(--color-bg) 0%, #0f172a 100%);
+  background: linear-gradient(280deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
 }
+
+/***** Theme utility helpers *****/
+.text-base-color { color: var(--color-text); }
+.text-muted { color: var(--color-text-muted); }
+.text-subtle { color: var(--color-text-subtle); }
+.bg-surface { background-color: var(--color-surface); }
+.bg-surface-2 { background-color: var(--color-surface-2); }
+.bg-veil { background-color: var(--color-surface-veil); }
+.border-base { border-color: var(--color-border); }
 
 @keyframes duckFloat {
   0% { transform: translateY(0); }
@@ -34,7 +62,9 @@ body {
 }
 
 .card {
-  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg shadow-black/20;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface-2);
+  @apply rounded-xl backdrop-blur-sm shadow-lg;
 }
 
 .btn {
@@ -42,11 +72,11 @@ body {
 }
 
 .btn-primary {
-  @apply bg-primary text-secondary hover:bg-yellow-400;
+  @apply bg-primary text-white hover:bg-yellow-300;
 }
 
 .btn-accent {
-  @apply bg-accent text-white hover:bg-sky-400;
+  @apply bg-accent text-white hover:bg-sky-300;
 }
 
 .text-gradient {

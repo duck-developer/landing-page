@@ -8,8 +8,8 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: "introducing-duck-developers",
-    title: "Introducing Duck Developers",
+    slug: "introducing-duck-developer",
+    title: "Introducing Duck Developer",
     date: "2025-10-01",
     excerpt: "Who we are and what we build: AI + backends that float.",
     content: `

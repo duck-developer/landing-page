@@ -1,6 +1,6 @@
-# Duck Developers — Landing Page
+# Duck Developer — Landing Page
 
-A simple Next.js + Tailwind CSS landing page for Duck Developers.
+A simple Next.js + Tailwind CSS landing page for Duck Developer.
 
 ## Tech
 - Next.js (App Router)
@@ -29,7 +29,7 @@ Visit http://localhost:3000
 ## Deploy to your domain
 - Build: `npm run build`
 - Start: `npm start`
-- Point your domain `duckdevelopers.my.id` to your hosting provider and serve the Next app
+- Point your domain `duckdeveloper.my.id` to your hosting provider and serve the Next app
 
 ## License
 MIT
