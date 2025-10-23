@@ -12,7 +12,7 @@
   --color-surface: #ffffff;
   --color-surface-2: #f8fafc; /* subtle surface */
   --color-surface-veil: rgba(255, 255, 255, 0.4);
-  --color-border: rgba(0, 0, 0, 0.10);
+  --color-border: rgba(0, 0, 0, 0.1);
 }
 .dark {
   --color-bg-top: #0b1220;
@@ -22,32 +22,58 @@
   --color-text-subtle: #94a3b8; /* slate-400 */
   --color-surface: rgba(255, 255, 255, 0.06);
   --color-surface-2: rgba(255, 255, 255, 0.04);
-  --color-surface-veil: rgba(2, 6, 23, 0.40); /* slate-950 @ 40% */
-  --color-border: rgba(255, 255, 255, 0.10);
+  --color-surface-veil: rgba(2, 6, 23, 0.4); /* slate-950 @ 40% */
+  --color-border: rgba(255, 255, 255, 0.1);
 }
 
-html, body, #__next {
+html,
+body,
+#__next {
   height: 100%;
 }
 
 body {
   color: var(--color-text);
-  background: linear-gradient(280deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
+  background: linear-gradient(
+    280deg,
+    var(--color-bg-top) 0%,
+    var(--color-bg-bottom) 100%
+  );
 }
 
 /***** Theme utility helpers *****/
-.text-base-color { color: var(--color-text); }
-.text-muted { color: var(--color-text-muted); }
-.text-subtle { color: var(--color-text-subtle); }
-.bg-surface { background-color: var(--color-surface); }
-.bg-surface-2 { background-color: var(--color-surface-2); }
-.bg-veil { background-color: var(--color-surface-veil); }
-.border-base { border-color: var(--color-border); }
+.text-base-color {
+  color: var(--color-text);
+}
+.text-muted {
+  color: var(--color-text-muted);
+}
+.text-subtle {
+  color: var(--color-text-subtle);
+}
+.bg-surface {
+  background-color: var(--color-surface);
+}
+.bg-surface-2 {
+  background-color: var(--color-surface-2);
+}
+.bg-veil {
+  background-color: var(--color-surface-veil);
+}
+.border-base {
+  border-color: var(--color-border);
+}
 
 @keyframes duckFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .duck-float {
   animation: duckFloat 3s ease-in-out infinite;
@@ -80,7 +106,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #FACC15, #0EA5E9);
+  background: linear-gradient(90deg, #facc15, #0ea5e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

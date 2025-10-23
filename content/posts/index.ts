@@ -12,15 +12,6 @@ export const posts: Post[] = [
     title: "Introducing Duck Developer",
     date: "2025-10-01",
     excerpt: "Who we are and what we build: AI + backends that float.",
-    content: `
-We build scalable software that just works.
-
-In this post, we share our approach to building AI-driven backends quickly and cleanly — using proven primitives, clear APIs, and strong observability.
-
-Highlights:
-- Production-first mindset
-- Simple, reliable architectures
-- Developer experience that speeds teams up
-`,
+    content: `lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
 ];

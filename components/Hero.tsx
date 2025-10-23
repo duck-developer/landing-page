@@ -39,10 +39,16 @@ export default function Hero() {
             {siteConfig.heroCopy || siteConfig.tagline}
           </p>
           <div className="mt-4 inline-flex items-center gap-2 text-lg text-subtle">
-            <img src="/images/duckling.png" alt="Duck" className="h-40 w-40 duck-float" />
+            <img
+              src="/images/duckling.png"
+              alt="Duck"
+              className="h-40 w-40 duck-float"
+            />
             <span
               className={`transition-all duration-300 ease-out inline-block ${
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+                visible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-2"
               }`}
             >
               {siteConfig.taglines?.[taglineIndex] || siteConfig.tagline}
@@ -52,17 +58,25 @@ export default function Hero() {
             <a href={siteConfig.links.whatsapp} className="btn btn-primary">
               Contact on WhatsApp
             </a>
-            <a href={`mailto:${siteConfig.contact.email}`} className="btn btn-accent">
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="btn btn-accent"
+            >
               Email us
             </a>
           </div>
-          <div className="mt-6 text-sm text-subtle">Based in Indonesia · Available for remote work</div>
+          <div className="mt-6 text-sm text-subtle">
+            Based in Indonesia · Available for remote work
+          </div>
         </div>
         <div className="relative">
           <div className="card p-6 md:p-10">
             <div className="grid grid-cols-3 gap-4">
               {siteConfig.highlights.map((h) => (
-                <div key={h.title} className="rounded-lg bg-surface-2 border border-base p-4 text-center">
+                <div
+                  key={h.title}
+                  className="rounded-lg bg-surface-2 border border-base p-4 text-center"
+                >
                   <div className="text-3xl">{h.icon}</div>
                   <div className="mt-2 text-sm font-medium">{h.title}</div>
                 </div>

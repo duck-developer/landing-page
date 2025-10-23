@@ -38,13 +38,15 @@ export const siteConfig = {
     {
       title: "AI Chat Backend",
       type: "Backend · AI",
-      description: "Production-ready chat backend with vector search and analytics.",
+      description:
+        "Production-ready chat backend with vector search and analytics.",
       href: "https://github.com/duckdeveloper/ai-chat-backend",
     },
     {
       title: "Serverless ETL",
       type: "Cloud · Data",
-      description: "Serverless data pipeline on AWS with ingestion and transformations.",
+      description:
+        "Serverless data pipeline on AWS with ingestion and transformations.",
       href: "https://github.com/duckdeveloper/serverless-etl",
     },
   ],

@@ -3,7 +3,9 @@ import "./globals.css";
 import { siteConfig } from "../site.config";
 import dynamic from "next/dynamic";
 import Footer from "../components/Footer";
-const ThemeToggle = dynamic(() => import("../components/ThemeToggle"), { ssr: false });
+const ThemeToggle = dynamic(() => import("../components/ThemeToggle"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} — Building AI-powered systems & scalable web backends.`,
@@ -22,7 +24,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="min-h-screen antialiased flex flex-col">
@@ -32,12 +38,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="font-semibold">{siteConfig.brandName}</span>
             </div>
             <nav className="hidden md:flex items-center gap-6 text-sm">
-              <a href="/" className="hover:text-primary">Home</a>
-              <a href="/about" className="hover:text-primary">About</a>
-              <a href="/skills" className="hover:text-primary">Skills</a>
-              <a href="/projects" className="hover:text-primary">Projects</a>
-              <a href="/contact" className="hover:text-primary">Contact</a>
-              <a href="/blog" className="hover:text-primary">Blog</a>
+              <a href="/" className="hover:text-primary">
+                Home
+              </a>
+              <a href="/about" className="hover:text-primary">
+                About
+              </a>
+              <a href="/skills" className="hover:text-primary">
+                Skills
+              </a>
+              <a href="/projects" className="hover:text-primary">
+                Projects
+              </a>
+              <a href="/contact" className="hover:text-primary">
+                Contact
+              </a>
+              <a href="/blog" className="hover:text-primary">
+                Blog
+              </a>
             </nav>
             <div className="hidden md:flex items-center gap-3">
               <ThemeToggle />
